@@ -88,9 +88,9 @@ fi
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
-ynh_script_progression --message="Upgrading Nginx web server configuration..." --weight=2
+ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=2
 
-# Create a dedicated nginx config
+# Create a dedicated NGINX config
 ynh_add_nginx_config
 
 #=================================================
@@ -117,7 +117,7 @@ ynh_system_user_create --username=$app
 #=================================================
 # SPECIFIC UPGRADE
 #==============================================
-# INSTALL CODIMD
+# INSTALL HEDGEDOC
 #==============================================
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
@@ -191,7 +191,7 @@ ynh_systemd_action --service_name=$app --action="start" --log_path="systemd" --l
 #=================================================
 # RELOAD NGINX
 #=================================================
-ynh_script_progression --message="Reloading Nginx web server..." --weight=1
+ynh_script_progression --message="Reloading NGINX web server..." --weight=1
 
 ynh_systemd_action --service_name=nginx --action=reload
 
