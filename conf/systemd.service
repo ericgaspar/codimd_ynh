@@ -1,6 +1,6 @@
 [Unit]
 Description=HedgeDoc: collaborative Markdown notes
-Documentation=https://github.com/codimd/server
+Documentation=https://github.com/hedgedoc/server
 After=network.target postgresql.service
 
 [Service]
