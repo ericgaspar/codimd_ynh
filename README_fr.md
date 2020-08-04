@@ -28,7 +28,7 @@ Vous pouvez configurer HedgeDoc en modifiant le fichier `/var/www/hedgedoc/confi
 ## Documentation
 
  * Documentation officielle : https://github.com/hedgedoc/server/tree/master/docs/
- * Documentation YunoHost : https://yunohost.org/#/app_codimd_fr
+ * Documentation YunoHost : https://yunohost.org/#/app_hedgedoc_fr
 
 ## Caractéristiques spécifiques YunoHost
 
